@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwxe04eyg2ilk"]
+[gd_scene load_steps=4 format=3 uid="uid://cwxe04eyg2ilk"]
+
+[ext_resource type="Script" path="res://scripts/clock.gd" id="1_ncpo1"]
 
 [sub_resource type="Gradient" id="Gradient_f61ua"]
 offsets = PackedFloat32Array(0.96, 1)
@@ -14,6 +16,7 @@ fill_to = Vector2(1, 0.5)
 
 [node name="Clock" type="Node2D"]
 position = Vector2(576, 324)
+script = ExtResource("1_ncpo1")
 
 [node name="Face" type="Sprite2D" parent="."]
 texture = SubResource("GradientTexture2D_7ntko")
